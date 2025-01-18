@@ -8,6 +8,7 @@ import StarRating from "./components/star-rating";
 
 import menus from "./components/recursive-menu/data";
 import QrCodeGenerator from "./components/qr-code-generator";
+import LightDarkMode from "./components/light-dark-mode";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <LoadMoreData /> */}
       {/* <TreeView menus={menus} /> */}
 
-      <QrCodeGenerator />
+      {/* <QrCodeGenerator /> */}
+      <LightDarkMode />
     </div>
   );
 }
