@@ -36,7 +36,7 @@ export default function ImageSlider({ url, page = 1, limit = 5 }) {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   }
 
-  useState(() => {
+  useEffect(() => {
     if (url !== "") fetchImages(url);
   }, [url]);
 
